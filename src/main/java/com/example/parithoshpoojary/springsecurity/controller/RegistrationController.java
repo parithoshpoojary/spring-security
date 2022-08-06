@@ -27,7 +27,7 @@ public class RegistrationController {
 
     @PostMapping("/register")
     public String registerUser(@RequestBody UserModel userModel, final HttpServletRequest request){
-        loggerFactory.debug("Trying to register the user by verifying the email");
+        log.debug("Trying to register the user by verifying the email");
         User user = userService.registerUser(userModel);
         publisher.publishEvent(new RegistrationCompleteEvent(user, applicationUrl(request)));
         return "Verification URL sent the registered mail.";

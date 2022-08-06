@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.example.parithoshpoojary</groupId>
     <artifactId>spring-security</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.2-SNAPSHOT</version>
     <name>spring-security</name>
     <description>spring-security</description>
     <properties>
@@ -38,6 +38,10 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
